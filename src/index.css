@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+  background-color: #7c9fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  align-items: center;
+  margin: auto;
 }
+h1{
+  background-color: #3f5ffe;
+  color: #ffffff;
+  border:20px solid #ffffff;
+  border-radius: 30px;
+  font-stretch: expanded;
+}
+.center-div{
+  background-color: #ffffff;
+  height:500px;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 150px;
+  border:none;
+  border-radius: 15px;
+  color:#3f5ffe;
+  box-shadow: 0.4rem 0.4rem 0.4rem #3f5ffe;
+}
+input{
+  border:none;
+  border-bottom: 2px solid #3f5ffe;
+  background: transparent;
+  outline: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+.btn{
+  width: 50px ;
+  height:55px ;
+  box-shadow: 0.2rem 0.2rem 0.2rem #3f5ffe !important;
+  background-color: #183eff !important;
+  color:white !important;
+  border-radius: 50% !important;
+}
+.btn:hover{
+  color: black !important;
+  background-color: white !important;
+}
+.MuiSvgIcon-root{
+  width:2rem !important;
+  height: 2rem !important;
+}
+ol{
+  margin-top: 30px;
+}
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.todo-style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo-style .deleteIcon{
+  width: 25px;
+  height:25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #3f5ffe;
+  margin:0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px #3f5ffe;
+}
+.todo-style .deleteIcon:hover{
+  background-color: transparent;
+  color: #3f5ffe;
+  box-shadow: 5px 5px 15px -5px #3f5ffe;
+}
+.todo-style  .fa-times:hover .list_style{
+  color: #3f5ffe;
+}
+@media (max-width:768px){
+  .center-div{
+    width:55%;
+  }
+  .todo-style  .fa-times{
+    margin: 0 15px 0 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  }
+  button{
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    font-size: 30px;
+  }
 }
